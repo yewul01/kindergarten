@@ -26,6 +26,8 @@ address, em { font-style:normal }
     line-height:0;
 }
 header, footer, section, article, aside, nav, main, figure { display:block }
+fieldset { border: none; }
+legend { display: none; }
 
 
 
