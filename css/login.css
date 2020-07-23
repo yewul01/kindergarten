@@ -34,5 +34,6 @@
     margin-top: 10px;
     font-size: 18px;
     border-radius: 4px;  }
-#login_page .login_form .check { margin: 20px 370px 0;
-text-align: laft; }
+#login_page .login_form .check { 
+    margin: 20px 370px 0;
+    text-align: laft; }
