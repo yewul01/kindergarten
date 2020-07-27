@@ -24,12 +24,12 @@
     color:rgba(255,255,255,0.7);
     padding:10px 0; letter-spacing:-0.5px; 
 }
-.topmenu .search_box ::placeholder { color: #ffffffb3; }
+.topmenu .search_box ::placeholder { color: #fff; }
 .topmenu .search_box { position: absolute; top: 0; left: 150px; }
 .topmenu .search_box fieldset { 
-    border: 1px solid #ffffffb3;
+    border: 1px solid #fff;
     padding-right: 10px; border-radius: 2px; }
-.topmenu .search_box i { background-color: #ffffffb3; }
+.topmenu .search_box i { background-color: #fff; }
 .topmenu .search_box input { 
     border: none; padding: 4px 0.5em; 
     background: none; }
