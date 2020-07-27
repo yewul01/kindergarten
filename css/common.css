@@ -43,16 +43,18 @@
 .logoNav { position:relative; height:76px;  }
 .logoNav h1 { 
     color:#ffae3d; font-size:26.25px;
-    padding: 24.875px 0; font-weight:bold;  
+    padding: 24.875px 0; font-weight:bold;
+    line-height: 15.75px;  
 }
 
 .logoNav .nav { position:absolute; top:0; right:0; }
 .logoNav .nav .depth1 > li { 
-    display:inline-block; padding: 24.875px 0;
-    font-size:15.75px; line-height:76px;  position:relative; 
-    padding-left:30px; font-weight:bold;     
-    transition:all 0.5s 
-}
+    display:inline-block; 
+    font-size:15.75px; position:relative;  
+    font-weight:bold; transition:all 0.5s }
+.logoNav .nav .depth1 > li > a { 
+    padding: 25.875px 0 23.875px 30px;
+    display: inline-block; }
 .logoNav .nav .depth1 > li:hover { color:#ffd23c; }
 .logoNav .nav .depth1 > li:first-child { color:#ffd23c }
 .logoNav .nav .depth1 > li > a:after { 
