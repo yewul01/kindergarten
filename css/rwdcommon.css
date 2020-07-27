@@ -9,7 +9,7 @@
     .logoNav { position:relative; height:auto; text-align: center; }
     .logoNav h1 { 
         color:#ffae3d; 
-        font-size:26.25px; line-height:76px;
-        font-weight:bold; text-align: center;}
+        font-size:26.25px; padding: 24.875px 0 0;
+        font-weight:bold; text-align: center; }
     .logoNav .nav { position: static; top: 0; right: 0; text-align: center; }
 }
