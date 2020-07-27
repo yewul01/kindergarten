@@ -32,7 +32,7 @@
 .topmenu .search_box i { background-color: #ffffffb3; }
 .topmenu .search_box input { 
     border: none; padding: 4px 0.5em; 
-    background: none; }
+    background: none; outline: none; }
 .topmenu a { transition:all 0.5s;}     
 .topmenu a:hover {color:rgb(255, 255, 255, 1) }    
 .topmenu .sns a { padding-right:10px; font-size:12.2px;  }
