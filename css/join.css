@@ -21,6 +21,20 @@
 .join_form .info_content input[type=password],
 .join_form .info_content input[type=date],
 .join_form .info_content select { height:45px; border: 1px solid #ccc; padding:0 1em; vertical-align:top;  }
+
+/* fontawesome사이트를 통한 select박스 디자인 변경 */
+.join_form .info_content select { -webkit-appearance:none; background: transparent; }
+.join_form .info_content select::-ms-expand { display: none; }
+.join_form .info_content .email_box { position: relative; }
+.join_form .info_content .email_box:after {
+    content: '\f0dd';
+    font-family: 'Font Awesome 5 Free';
+    font-weight: 900;
+    color: red;
+    position: absolute; top: 50%; right: 15px;
+    
+}
+
 .join_form .w320 { width:320px}
 .join_form .w160 { width:160px}
 .join_form .addr_box span { line-height:45px; }
@@ -30,21 +44,36 @@
 .join_form .info_content button:hover { cursor:pointer; background:#ddd }
 .join_form .gender_area label { line-height:45px; padding-right:15px }
 .join_form .hobby_area label { line-height:45px; padding-right:15px  }
-
+/* fontawesome사이트를 통한 radio & check 디자인 변경 */
 .join_form .gender_area label:before { 
-    content: '\f058'; font-family: 'Font Awesome 5 Free'; 
-    font-weight: 400; color: #ccc; margin-right:8px; }
+    content: '\f058'; 
+    font-family: 'Font Awesome 5 Free'; 
+    font-weight: 400; 
+    color: #ccc; 
+    margin-right:8px; }
 .join_form .gender_area input[type=radio]:checked + label:before { 
-        content: '\f058'; font-family: 'Font Awesome 5 Free'; 
-        font-weight: 900; color: #3e78ff; margin-right:8px; }
+    content: '\f058'; 
+    font-family: 'Font Awesome 5 Free'; 
+    font-weight: 900; 
+    color: #3e78ff; 
+    margin-right:8px; }
 
-.join_form .hobby_area label:before { 
-    content: '\f058'; font-family: 'Font Awesome 5 Free';
-font-weight: 400; color: #ccc; margin-right: 8px; }
+.join_form .hobby_area label:before {
+     /* lable 인라인 요소이므로 inline-block요소를 추가해야 trasform이 적용됨 */
+    content: '\f058'; 
+    font-family: 'Font Awesome 5 Free';
+    font-weight: 400; 
+    color: #ccc; 
+    margin-right: 8px; 
+    display: inline-block;
+    transform: scale(2); }
 
 .join_form .hobby_area input[type=checkbox]:checked +label:before { 
-    content: '\f058'; font-family: 'Font Awesome 5 Free';
-font-weight: 900; color: #3e78ff; margin-right: 8px; }
+    content: '\f058'; 
+    font-family: 'Font Awesome 5 Free';
+    font-weight: 900; 
+    color: #3e78ff; 
+    margin-right: 8px; }
 
 .join_form .gender_area input[type=radio] {display: none; }
 .join_form .hobby_area input[type=checkbox] { display: none; }
