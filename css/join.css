@@ -13,7 +13,9 @@
 
 .join_form .info_list {padding:10px 0; border-bottom:1px solid #ccc;}
 .join_form .info_list li {padding:8px 0}
+
 .join_form .tit_lbl { display:inline-block; width:20%; line-height:45px; font-weight:bold; font-size:17px; letter-spacing: -2px; padding-left:20px;  }
+
 .join_form .info_content { display:inline-block; width:79%; vertical-align:top }
 .join_form .info_content input[type=text],
 .join_form .info_content input[type=password],
@@ -26,9 +28,27 @@
 .join_form .mb3 { margin:0px 0 5px}
 .join_form .info_content button { height:45px; width:80px; border:1px solid #ccc; border-radius:5px }
 .join_form .info_content button:hover { cursor:pointer; background:#ddd }
-.join_form .gender_area label,
-.join_form .hobby_area label
-{ line-height:45px; padding-right:15px  }
+.join_form .gender_area label { line-height:45px; padding-right:15px }
+.join_form .hobby_area label { line-height:45px; padding-right:15px  }
+
+.join_form .gender_area label:before { 
+    content: '\f058'; font-family: 'Font Awesome 5 Free'; 
+    font-weight: 400; color: #ccc; margin-right:8px; }
+.join_form .gender_area input[type=radio]:checked + label:before { 
+        content: '\f058'; font-family: 'Font Awesome 5 Free'; 
+        font-weight: 900; color: #3e78ff; margin-right:8px; }
+
+.join_form .hobby_area label:before { 
+    content: '\f058'; font-family: 'Font Awesome 5 Free';
+font-weight: 400; color: #ccc; margin-right: 8px; }
+
+.join_form .hobby_area input[type=checkbox]:checked +label:before { 
+    content: '\f058'; font-family: 'Font Awesome 5 Free';
+font-weight: 900; color: #3e78ff; margin-right: 8px; }
+
+.join_form .gender_area input[type=radio] {display: none; }
+.join_form .hobby_area input[type=checkbox] { display: none; }
+
 .join_form .info_content textarea {
     height: 245px; width:70%;
     border:1px solid #ccc; 
