@@ -3,7 +3,7 @@
 @import "common.css";
 @import "rwdcommon.css";
 
-::placeholder { color:pink }
+::placeholder { color: goldenrod }
 #join_page { padding:217px 0 100px }
 #join_page h2 { text-align:center; font-size:30px;
     padding-bottom:30px }
@@ -22,7 +22,7 @@
 .join_form .info_content input[type=date],
 .join_form .info_content select { height:45px; border: 1px solid #ccc; padding:0 1em; vertical-align:top;  }
 
-/* fontawesome사이트를 통한 select박스 디자인 변경 */
+/* fontawesome사이트를 통한 select박스 디자인 변경 
 .join_form .info_content select { -webkit-appearance:none; background: transparent; }
 .join_form .info_content select::-ms-expand { display: none; }
 
@@ -32,7 +32,7 @@
     font-weight: 900;
     color: red;
     line-height: 40px; display: inline-block;
-    transform: translateX(-30px); }
+    transform: translateX(-30px); }*/
 
 .join_form .w320 { width:320px}
 .join_form .w160 { width:160px}
@@ -43,7 +43,7 @@
 .join_form .info_content button:hover { cursor:pointer; background:#ddd }
 .join_form .gender_area label { line-height:45px; padding-right:15px }
 .join_form .hobby_area label { line-height:45px; padding-right:15px  }
-/* fontawesome사이트를 통한 radio & check 디자인 변경 */
+/* fontawesome사이트를 통한 radio & check 디자인 변경
 .join_form .gender_area label:before { 
     content: '\f058'; 
     font-family: 'Font Awesome 5 Free'; 
@@ -55,10 +55,10 @@
     font-family: 'Font Awesome 5 Free'; 
     font-weight: 900; 
     color: #3e78ff; 
-    margin-right:8px; }
+    margin-right:8px; }*/
 
-.join_form .hobby_area label:before {
-     /* lable 인라인 요소이므로 inline-block요소를 추가해야 trasform이 적용됨 */
+/*.join_form .hobby_area label:before {
+      lable 인라인 요소이므로 inline-block요소를 추가해야 trasform이 적용됨 
     content: '\f058'; 
     font-family: 'Font Awesome 5 Free';
     font-weight: 400; 
@@ -72,7 +72,39 @@
     font-family: 'Font Awesome 5 Free';
     font-weight: 900; 
     color: #3e78ff; 
-    margin-right: 8px; }
+    margin-right: 8px; }*/
+
+.join_form .gender_area label:before { 
+    content: ''; 
+    display: inline-block; 
+    margin-right: 8px;
+    width: 20px; height: 20px; 
+    background-image: url(../images/sprite_img.png);
+    background-repeat: no-repeat;
+    background-size: auto;
+    background-position: -296px -259px;
+    transform: scale(0.8);
+    position: relative; top: 3px;
+}
+.join_form .gender_area input[type=radio]:checked + label:before { 
+    background-position: -296px -186px; }
+
+.join_form .hobby_area label:before {
+    content: ''; 
+    margin-right: 8px; 
+    display: inline-block;
+    width: 20px; height: 20px;
+    background-image: url(../images/sprite_img.png);
+    background-repeat: no-repeat;
+    background-size: auto;
+    background-position: -296px -114px;
+    position: relative; top: 5px;
+    transform: scale(0.8); 
+}
+      
+.join_form .hobby_area input[type=checkbox]:checked +label:before { 
+    background-position: -138px -182px;  
+}
 
 .join_form .gender_area input[type=radio] {display: none; }
 .join_form .hobby_area input[type=checkbox] { display: none; }
